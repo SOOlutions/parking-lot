@@ -27,20 +27,22 @@ _For Behavior Driven Development purpose_
 
 ### Scenario 1:
 
-**Given** I am in front of the entrance
-**And** I'm driving a car
-**And** There is 10 compact spots left
-**When** I read the information panel
-**Then** I should see a line displaying "cars: 10 spots"
-**And** I have access to the ticket machine
+ - **Given** I am in front of the entrance
+ - **And** I'm driving a car
+ - **And** There is 10 compact spots left
+ - **And** There is 2 large spots left
+ - **When** I read the information panel
+ - **Then** I should see a line displaying "cars: 10 spots"
+ - **And** I have access to the ticket machine
 
 ### Scenario 2:
 
-**Given** I am in front of the entrance
-**And** I'm driving a car
-**And** There is no compact spots left
-**When** I read the information panel
-**Then** I should see a line displaying "cars: full"
-**And** I cannot access the ticket machine
+ - **Given** I am in front of the entrance
+ - **And** I'm driving a car
+ - **And** There is no compact spots left
+ - **And** There is no large spot left
+ - **When** I read the information panel
+ - **Then** I should see a line displaying "cars: full"
+ - **And** I cannot access the ticket machine
 
 [...]
